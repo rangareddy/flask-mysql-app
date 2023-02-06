@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+
+{% if user_fullname is defined and user_fullname %}
+    <p>Welcome {{ user_fullname }}!</p>
+{% endif %}
+
+{% endblock %}
